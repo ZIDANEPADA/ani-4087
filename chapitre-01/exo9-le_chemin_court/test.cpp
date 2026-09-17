@@ -12,10 +12,10 @@ struct Vec3 {
     double x, y, z;
 };
 
-// --- Opérateurs sur Vec3 ---
+// Opérateurs sur Vec3
 Vec3 operator*(const Vec3& a, double s) { return {a.x*s, a.y*s, a.z*s}; }
 
-// --- Quaternions ---
+// Quaternions
 Quat Conjuguer(const Quat& q) {
     return { -q.x, -q.y, -q.z, q.w };
 }

@@ -17,7 +17,7 @@ struct Pose {
     Quat orientation;
 };
 
-// --- Opérateurs sur Vec3 ---
+// Opérateurs sur Vec3
 Vec3 operator+(const Vec3& a, const Vec3& b) { return {a.x+b.x, a.y+b.y, a.z+b.z}; }
 Vec3 operator*(const Vec3& a, double s) { return {a.x*s, a.y*s, a.z*s}; }
 
