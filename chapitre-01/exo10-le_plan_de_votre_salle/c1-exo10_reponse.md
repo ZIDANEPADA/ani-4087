@@ -1,1 +1,3 @@
-l'image se trouve dans le dossier
+chapitre-01/exo10-le_plan_de_votre_salle/PXL_20260917_072346900.jpg
+
+chapitre-01/exo10-le_plan_de_votre_salle/PXL_20260917_072358719.jpg
