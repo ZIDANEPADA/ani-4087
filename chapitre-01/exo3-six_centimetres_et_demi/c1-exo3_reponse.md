@@ -1,11 +1,16 @@
-- Les 6 valeurs : 
+- Les 6 valeurs sont: 
 
-6,5 — 6,8 — 5,5 — 6,0 — 5,9 — 6,9 (cm)
+1. 6.5 cm
+2. 6.8 cm
+3. 5.5 cm
+4. 6.0 cm
+6. 5.9 cm
+7. 6.9 cm
 
 - La moyenne :
-(6,5+6,8+5,5+6,0+5,9+6,9)/6 = 6.27 cm
+(6.5+6.8+5.5+6.0+5.9+6.9)/6 = 6.27 cm
 
-Moyenne de ton échantillon : **6,27 cm**
+Moyenne est de: **6,27 cm**
 
 L'écart min/max
 - Minimum : **5,5 cm**

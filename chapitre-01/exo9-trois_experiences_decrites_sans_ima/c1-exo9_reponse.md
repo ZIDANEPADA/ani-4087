@@ -1,0 +1,4 @@
+Classement et decription  des applications :
+1. **Job Simulatoer** : l'utilisater reste debout dans une zone délimitée et se déplace physiquement. Il est mons suceptiple de rendre malade parceque le mouvement visuel correspond presque toujours à un vrai mouvement su corps.
+2. **Beat Saber** : l'utilisateur reste debout sur place dans une zone délimité. il ne se déplace pas réellement. classer en deuxime position parceque le corps activement (bras, buste), et la tete reste fixe par rapport à l'environement.
+3. **Simulateur de vol** : l'utilisateur reste assis, complètement immobile physiquement, les images donnent l'impression d'un déplacement à grande vitesse. Le plus riqué parceque l'oeil perçoit un mouvement soutenu et continu, l'oreil interne ne détecte rien.

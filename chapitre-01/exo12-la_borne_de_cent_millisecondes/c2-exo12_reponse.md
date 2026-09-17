@@ -1,0 +1,1 @@
+La courbe montre que l'erreur d'extrapolation varie avec la durée de prédiction. Elle augmente jusqu'à environ 3°, puis diminue presque jusqu'à 0°, avant de remonter à nouveau. ça signifie que plus on cherche à prédire la pose de la tête longtemps à l'avance, plus l'extrapolation peut devenir imprécise.
