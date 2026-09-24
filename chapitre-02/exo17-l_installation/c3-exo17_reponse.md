@@ -7,5 +7,5 @@ j'ai executer la comande suivante : *jenga deploy --platform macos*
 
 puis j'ai ouvert le fichier executable obtenu dans le terminal
 
-![resultat de l'execution](Capture d’écran 2026-09-24 à 08.03.29.png)
+![Capture d’écran 2026-09-24 à 08.03.29](Capture d’écran 2026-09-24 à 08.03.29.png)
 
