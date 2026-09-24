@@ -7,9 +7,5 @@ j'ai executer la comande suivante : *jenga deploy --platform macos*
 
 puis j'ai ouvert le fichier executable obtenu dans le terminal
 
-```md
-```HTML
-<p align="center">
-    <img src="chapitre-02/exo17-l_installation/Capture d’écran 2026-09-24 à 08.03.29.png" width="700">
-</p>
-```
+![resultat de l'execution](Capture d’écran 2026-09-24 à 08.03.29.png)
+
