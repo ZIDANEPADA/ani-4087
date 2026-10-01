@@ -1,0 +1,1 @@
+[2026-10-01 18:57:32.942] [WRN] [default] [: in ] -> [NkWindow] REFUS : NkWindow::ClipMouseToClient n'agit pas sur le dorsal Cocoa. macOS decouple le curseur (CGAssociateMouse...) au lieu de le confiner a un rectangle : l'effet n'est pas celui du nom. L'appel a ete accepte, il n'aura AUCUN effet. Table complete : wiki/Runtime/NKWindow/Curseur-par-dorsal.md

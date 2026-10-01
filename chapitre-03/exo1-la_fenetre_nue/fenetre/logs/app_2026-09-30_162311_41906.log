@@ -1,0 +1,1 @@
+[2026-09-30 16:23:11.044] [WRN] [default] [: in ] -> [NkWindow] REFUS : NkWindowConfig::movable n'est pas tenu par le dorsal Cocoa - ce dorsal ne l'implemente pas encore. Le reglage a ete accepte, il n'aura AUCUN effet. Table complete : wiki/Runtime/NKWindow/Proprietes-par-dorsal.md
