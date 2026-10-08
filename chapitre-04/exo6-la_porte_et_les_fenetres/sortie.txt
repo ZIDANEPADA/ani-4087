@@ -1,0 +1,8 @@
+
+porte 40 OK
+fenetre 40 OK
+colle 1 CLIGNOTE
+haute 40 DEBORDE
+flottante 310 DECOLLE
+OK 2
+A REPRENDRE 3

@@ -1,0 +1,8 @@
+Lignes avant les fonctions :
+Mon programme comportait 44 lignes avant la création des fonctions PoserAuSol et PoserSurTable. Le calcul de la position verticale était effectué directement à chaque endroit où un objet devait être posé.
+
+Lignes apres :
+Mon programme comporte 51 lignes après l'ajout des fonctions PoserAuSol et PoserSurTable. Les calculs de position verticale sont maintenant regroupés dans ces deux fonctions et réutilisés pour les différents objets.
+
+L'erreur que la fonction m'evite :
+La fonction PoserAuSol évite d'oublier que le centre d'un objet posé au sol se trouve à la moitié de sa hauteur, soit sy / 2, et non à y = 0. La fonction PoserSurTable applique le même principe sur le dessus de la table : le centre se trouve à H + sy / 2. Cela évite de refaire manuellement ces calculs pour chaque objet et donc de créer des erreurs de positionnement. Si une erreur est trouvée dans le calcul de la demi-hauteur, il suffit de la corriger une seule fois dans la fonction.

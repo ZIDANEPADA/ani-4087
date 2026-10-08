@@ -1,0 +1,8 @@
+bureau Vulkan
+portable DirectX 11
+mac Metal
+serveur Software
+telephone Vulkan
+IGNOREES 1
+LOGICIEL 1
+DIFFERENTES 4
