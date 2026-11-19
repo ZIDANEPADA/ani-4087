@@ -1,0 +1,5 @@
+Ce que le simulateur dit : Il signale les fins de trame qui ne sont pas soumises systématiquement (JAMAIS ou SI_RENDU) ainsi que les chaînes absentes de la projection. Dans les exemples 2, 3 et 4, il écrit donc un avertissement ou un refus observable.
+
+Ce qu'il tait : Il ne reprojette pas l'image et ne peut donc pas voir une pose relue trop tard, un instant courant utilisé à la place de l'instant prédit, ni un espace incorrect. Les exemples 5 et 6 sont muets alors que le casque tremble ou que l'image est de travers et décalée.
+
+Plus sévère : Un simulateur doit détecter les erreurs que le vrai casque pourrait laisser passer silencieusement, afin de les corriger avant le déploiement. Par exemple, l'application 5 affiche TREMBLE sur le casque alors que le simulateur répond MUET : il faut donc qu'il vérifie explicitement l'instant soumis, même s'il ne compose pas réellement l'image.

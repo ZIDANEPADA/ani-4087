@@ -1,0 +1,2 @@
+avec prediction : moyenne ... deg, max ... deg, sur 1000 images
+sans prediction : moyenne ... deg, max ... deg, sur 1000 images

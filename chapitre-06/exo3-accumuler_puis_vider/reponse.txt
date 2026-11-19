@@ -1,0 +1,11 @@
+Lecture du module :
+La version « lu » ajoute à chaque image NkInput.MouseRawDeltaX() x sensibilité. Souris immobile, la colonne « lu » continue de croître à vitesse constante : <<tes valeurs, par exemple +x degrés par seconde>>. Le module garde le dernier delta et ne le remet jamais à zéro, donc ce delta est rejoué à chaque image.
+
+Accumulé et vidé :
+La version « vide » s'arrête quand la souris s'arrête : la colonne reste figée à <<ta valeur>> degrés après la fin du mouvement. À chaque événement brut j'ajoute le delta à un accumulateur ; une fois par image je lis l'accumulateur, je l'ajoute au lacet, puis je le remets à zéro. Souris immobile, plus aucun événement n'arrive, l'accumulateur reste à 0 et le lacet ne bouge plus. Le total tourné vaut exactement la somme des mouvements de la souris.
+
+Accumulé sans vidage :
+La colonne « sans vidage » ne se stabilise pas : elle accélère pendant que je bouge la souris, puis elle croît à vitesse constante énorme quand je m'arrête (<<tes valeurs>>). L'accumulateur contient la SOMME de tous les mouvements depuis le lancement et, comme on ne le vide pas, la même somme est ajoutée au lacet à CHAQUE image : après arrêt, le lacet augmente à chaque image de (total des comptes x sensibilité), par exemple si j'ai tourné la souris de 100 degrés au total, la tête gagne encore 100 degrés par image. C'est pire que la version « lu » (qui rejoue seulement le dernier delta) : j'ai reproduit dans mon code, en plus grave, le défaut que je contournais.
+
+Ce que fait le vidage :
+Le vidage transforme une quantité qui se cumule (« tout ce qui est arrivé depuis le début ») en une quantité par image (« ce qui est arrivé depuis la dernière image »). Sans lui, le lacet reçoit chaque image la mémoire de tout le passé ; avec lui, il ne reçoit que du nouveau. Le motif vaut partout où deux rythmes se rencontrent : les événements arrivent quand ils veulent (zéro, un ou dix par image), les images à cadence fixe. L'ordre compte : on lit PUIS on vide, dans l'autre sens on ne lit jamais rien ; et on ne vide pas dans la boucle des événements, ce qui perdrait tous les mouvements sauf le dernier.

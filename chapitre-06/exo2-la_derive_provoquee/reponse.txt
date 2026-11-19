@@ -1,0 +1,11 @@
+Ma sensibilité :
+J'ai pris -0,0025 radian par compte du capteur (soit -0,143 degré par compte). Le signe est négatif pour que la souris vers la droite fasse tourner la tête vers la droite : dans la salle un lacet positif tourne vers la gauche (rotation directe autour de +Y). Je l'ai gardée identique pour toute la mesure.
+
+Vitesse de dérive : <<X>> deg/s
+<<Calcul : prends deux lignes ÉLOIGNÉES de derive.txt, par exemple t1, lacet1 et t2, lacet2 ; vitesse = (lacet2 - lacet1) / (t2 - t1). Exemple de calcul avec des chiffres INVENTÉS pour t'expliquer : lacet = 190,0 à t = 6,0 s et 332,6 à t = 10,0 s donne (332,6 - 190,0) / 4,0 = 35,7 deg/s. Écris TON chiffre à la place de X, sur cette ligne.>>
+
+D'où vient ce chiffre :
+Le chiffre vient de deux valeurs relevées : la valeur de « brut » (le dernier déplacement brut que garde le module, en comptes) et la cadence des images. Chaque image, le programme ajoute brut x sensibilité au lacet, donc la vitesse vaut brut x 0,143 deg x images par seconde. <<Mets tes chiffres : par exemple brut = 2 et 120 images/s donnent 2 x 0,143 x 120 = 34,4 deg/s, à comparer à ta vitesse mesurée sur les deux lignes ; les deux doivent s'accorder à quelques pour cent près. Le nombre d'images par seconde se lit dans tes lignes : (images2 - images1) / (t2 - t1).>> C'est aussi pourquoi deux machines ne donnent pas la même vitesse : elle dépend de la valeur gardée et de la cadence.
+
+Pourquoi elle ne s'arrête pas :
+Dans mes lignes, la colonne « brut » ne retombe jamais à 0 quand la souris est immobile : elle garde la valeur du dernier événement (<<ta valeur>>) pendant les dix secondes. Le module écrit le dernier déplacement (OnRaw écrase) et personne ne le remet à zéro. Comme mon programme relit cette valeur à chaque image et l'ajoute au lacet sans rien vider, il rejoue le même mouvement image après image : la tête tourne seule, à vitesse constante, sans fin. Ce n'est pas ma souris qui dérive : c'est une valeur gardée jamais consommée.

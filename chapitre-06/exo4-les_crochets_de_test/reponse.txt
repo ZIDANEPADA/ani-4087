@@ -1,0 +1,8 @@
+Pourquoi cette direction :
+La convention de la salle est avant = -Z, haut = +Y, repère de la main droite. Un lacet positif est une rotation directe autour de +Y : vue de dessus, elle tourne de l'avant (-Z) vers la gauche (-X). À 90 degrés, avec un tangage nul, le regard est donc (-1, 0, 0) : j'ai écrit ce vecteur en dur après avoir fait le raisonnement, sans appeler Regard(). Pour le tangage : lever les yeux de 30 degrés donne un composant vertical sin(30) = 0,5 et un composant vers l'avant de cos(30) = 0,866 vers -Z, soit (0 ; 0,5 ; -0,866). À 180 degrés on regarde vers +Z, et 45/45 donne (-0,5 ; 0,7071 ; -0,5).
+
+L'épreuve qui sait dire non :
+Quand j'inverse le signe du lacet dans Regard() (MASALLE_SIGNE_LACET = -1), l'épreuve « lacet 90, tangage 0 » donne (1, 0, 0) au lieu de (-1, 0, 0) et affiche ECHEC, tout comme l'épreuve « lacet 45, tangage 45 » ; le programme rend 1. Les épreuves « tangage 30 » et « lacet 180 » passent encore : elles ne dépendent pas du signe du lacet, c'est pour cela qu'il en faut plusieurs. Si j'avais recalculé l'attendu avec Regard(), l'épreuve n'aurait jamais pu échouer : elle aurait comparé la formule à elle-même.
+
+Ce que la souris ne permettait pas :
+Avec la souris, vérifier un lacet de 90 degrés demande de bouger la main au hasard puis de juger à l'oeil, avec une tolérance d'à peu près « ça a l'air bon ». Avec PoserTete et le test, je vérifie exactement 90 degrés en une seconde, sans fenêtre, sans personne devant l'écran, à chaque construction, avec une tolérance de 0,0001 et un code de sortie qu'un script peut lire. Une régression du signe du lacet est attrapée tout de suite et non trois semaines plus tard par quelqu'un qui trouve que « la tête tourne à l'envers ».

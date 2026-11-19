@@ -1,0 +1,5 @@
+sans le test
+# image avant : image fautive : image après
+
+avec le test
+# mêmes trois lignes autour du même lacet

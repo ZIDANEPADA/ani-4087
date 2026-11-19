@@ -1,0 +1,7 @@
+latence 0 ms : avec ... deg (max ...), sans ... deg (max ...)
+latence 10 ms : avec ... deg (max ...), sans ... deg (max ...)
+latence 20 ms : avec ... deg (max ...), sans ... deg (max ...)
+latence 40 ms : avec ... deg (max ...), sans ... deg (max ...)
+latence 80 ms : avec ... deg (max ...), sans ... deg (max ...)
+sans borne : echantillon a ... s, horizon ... ms, predit ... deg, vrai ... deg
+avec borne : echantillon a ... s, horizon ... ms, predit ... deg, vrai ... deg

@@ -1,0 +1,3 @@
+copies de la salle : ...
+sans verrou : moyenne ... ms, ecart type ... ms, max ... ms
+avec verrou : moyenne ... ms, ecart type ... ms, max ... ms

@@ -1,0 +1,1 @@
+<<Colle ici AU MOINS CINQ lignes de derive_sortie.txt, telles quelles, prises APRÈS l'arrêt de la souris. Elles ont la forme : t = 6.0 s, images = 720, brut = 2, lacet = 187.3 deg >>

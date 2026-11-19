@@ -1,0 +1,8 @@
+Ce qui diffère le plus :
+<<Regarde difference.png (noir = pareil) et nomme ce qui est le plus clair : attendu, les objets proches (le cube jaune au sol, la table) et surtout leurs bords verticaux, alors que le mur du fond et la porte sont presque noirs. Appuie-toi sur ton écart max M et ton nombre de pixels N.>>
+
+Pourquoi là :
+Un point vu par deux yeux séparés de B = 63 mm se décale entre les deux images d'une quantité inversement proportionnelle à sa distance Z : décalage = f x B / Z (f : focale en pixels). Un objet à 1 mètre se décale 4 fois plus qu'un objet à 4 mètres ; à l'infini, le décalage tend vers zéro. L'image de différence est donc une carte des distances : clair = proche, noir = loin. Les bords verticaux des objets apparaissent parce que ce sont eux qui, en se décalant d'une image à l'autre, font passer un pixel d'une couleur à une autre ; une surface uniforme décalée garde la même couleur et reste noire.
+
+Ce que prouve le noir :
+L'image de la vue oubliée (les deux caméras à la même place) est <<presque entièrement noire / entièrement noire : écris ton résultat>> : sans décalage des yeux, les deux images sont identiques, donc le décalage de 63 mm est la SEULE cause des différences de difference.png. Elle prouve que l'écart vient bien de la position des yeux et non d'autre chose (horloge, ordre de rendu, bruit). Elle ne prouve pas que le décalage soit juste : ni la bonne direction (le long de la droite de la tête), ni la bonne valeur, ni que les deux images soient correctes : deux images blanches donneraient aussi du noir (d'où le contrôle de la part de pixels blancs du programme).

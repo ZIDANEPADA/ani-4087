@@ -1,0 +1,5 @@
+Négligeable : Les écarts de position restent faibles (13 mm au maximum et 5 mm en moyenne). En revanche, l'écart angulaire atteint 2,2° et sa moyenne est de 0,77° : il n'est donc pas prudent de considérer tous les écarts comme négligeables.
+
+Seuil : Avec d = 11 ms, un degré correspond à 1000 millièmes de degré. La vitesse seuil vérifie v × 11 = 1000, donc v = 1000 / 11 ≈ 90,91°/s. À partir d'environ 90,91°/s, l'écart dépasse un degré ; pour une vitesse entière, 91°/s suffit.
+
+Ce que corrige le compositeur : Il corrige l'écart entre la pose utilisée pour rendre l'image et la pose relue à la fin de trame. Il peut ainsi compenser le mouvement de la tête survenu après le rendu, grâce à la reprojection.

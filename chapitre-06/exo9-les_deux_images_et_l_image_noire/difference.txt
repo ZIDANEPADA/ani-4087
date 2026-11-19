@@ -1,0 +1,1 @@
+<<Colle ici les deux lignes écrites par le programme dans difference.txt, sans retouche : deux yeux : N pixels sur 460800, ecart max M puis vue oubliee : N pixels sur 460800, ecart max M. (Le total T est 640 x 720 = 460800.) Avant de les croire, regarde oeil-gauche.png et oeil-droit.png : si elles sont blanches, le chiffre ne veut rien dire.>>

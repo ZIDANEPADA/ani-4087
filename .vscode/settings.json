@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "*.jenga": "python"
+    },
+    "python.analysis.include": [
+        "**/*.jenga",
+        "**/*.py"
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportWildcardImportFromLibrary": "none",
+        "reportMissingImports": "warning",
+        "reportUndefinedVariable": "warning"
+    },
+    "python.analysis.extraPaths": [
+        "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages",
+        ".jenga-typings"
+    ],
+    "_jengaIdeConfigVersion": "13f3383affc6165c",
+    "C_Cpp.dimInactiveRegions": false
+}

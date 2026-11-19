@@ -1,0 +1,5 @@
+serie programme
+# 20 lignes générées par le programme à MASALLE_TOUR=30
+
+serie souris
+# 20 lignes issues de la souris, à vitesse approximativement constante
