@@ -1,0 +1,5 @@
+Le réglage fantôme : La personne qui règle depthZeroToOne pense modifier un paramètre qui influencera le backend. En réalité, le relevé ne montre que DECLARE : le champ existe, mais il n’est ni lu ni utilisé. Sa valeur ne produit donc aucun effet ; c’est un réglage fantôme qui donne une fausse impression de contrôle.
+
+La lecture cachée : Le menu modifie le champ openXrLoaderPath, mais le backend lit directement NK_XR_OPENXR_LOADER avec GETENV. Cette lecture contourne le champ : la valeur choisie dans le menu n’est pas celle utilisée pour charger le runtime. Il faut supprimer cette lecture directe et faire passer la variable d’environnement par la fonction centrale qui copie sa valeur dans le champ, puis faire lire le champ au backend.
+
+Le menu : Le relevé contient 9 réglages distincts ; 5 sont classés MENU et peuvent réellement être changés par l’application selon les règles données. Pour les autres, il faut corriger leur usage : rendre les réglages utiles effectivement lus, fournir une écriture par le code ou l’environnement lorsque c’est pertinent, supprimer les champs fantômes et remplacer les lectures directes d’environnement par la lecture du champ.

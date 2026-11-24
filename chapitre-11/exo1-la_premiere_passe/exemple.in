@@ -1,0 +1,10 @@
+9
+//
+// MonBackend.h
+// Le backend du casque. Etape 1 livree ici : la decouverte.
+// Etape 2 viendra ensuite.
+// Crochets d'environnement :
+//   NK_XR_LOADER=<chemin>   loader a charger en priorite
+#pragma once
+// NK_XR_TRACE=1 active la trace
+class MonBackend;

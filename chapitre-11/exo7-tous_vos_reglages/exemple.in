@@ -1,0 +1,27 @@
+26
+renderScale DECLARE
+renderScale ECRIT
+renderScale ENV
+renderScale LIT
+halfRate DECLARE
+halfRate ECRIT
+halfRate ENV
+halfRate LIT
+submitDepthLayer DECLARE
+submitDepthLayer ECRIT
+submitDepthLayer ENV
+submitDepthLayer LIT
+listExtensions DECLARE
+listExtensions ENV
+listExtensions LIT
+openXrLoaderPath DECLARE
+openXrLoaderPath ENV
+openXrLoaderPath GETENV
+depthZeroToOne DECLARE
+syncCopyDiagnostic DECLARE
+syncCopyDiagnostic LIT
+displayHz DECLARE
+displayHz ENV
+displayHz LIT
+shotFrame GETENV
+shotFrame LIT

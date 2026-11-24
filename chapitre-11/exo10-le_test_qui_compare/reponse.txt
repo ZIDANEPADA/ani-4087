@@ -1,0 +1,5 @@
+Ce qui varie : Si l'instant venait de l'horloge réelle, sa valeur dépendrait du moment de lancement et de la durée exacte de chaque image. Deux exécutions pourraient donc produire des instants différents, même avec les mêmes paramètres.
+
+Le remède : Le test utilise une horloge scriptée. Il calcule l'instant de chaque image avec la formule t × période, sans consulter l'horloge réelle. La pose et les déplacements sont eux aussi calculés à partir des valeurs d'entrée.
+
+La preuve : On lance le même test avec les mêmes paramètres pour chaque backend et on compare les sorties octet par octet. Si les positions des deux yeux et les instants sont identiques, les deux backends ont produit les mêmes résultats pour ce scénario.

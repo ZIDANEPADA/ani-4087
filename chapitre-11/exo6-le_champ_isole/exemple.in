@@ -1,0 +1,11 @@
+C 2 veutCasque NK_XR_BACKEND_OPENXR
+D 1 MON_XR_OPENXR_DISPONIBLE
+8
+INIT bool veutCasque = LireReglage();
+INIT desc.backend = veutCasque ? NkXrBackendType::NK_XR_BACKEND_OPENXR : NkXrBackendType::NK_XR_BACKEND_SIMULATEUR;
+FABRIQUE #ifdef MON_XR_OPENXR_DISPONIBLE
+FABRIQUE if (desc.backend == NkXrBackendType::NK_XR_BACKEND_OPENXR) { return new Backend(); }
+FABRIQUE #endif
+BOUCLE // veutCasque ne doit jamais servir ici
+BOUCLE if (veutCasque) { DessinerMiroir(); }
+SCENE salle.Dessiner(vues);

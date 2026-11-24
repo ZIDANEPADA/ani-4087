@@ -1,0 +1,5 @@
+Le défaut neutre : Les méthodes propres au casque existent déjà dans l’interface commune avec un corps par défaut neutre. L’application peut donc appeler ces méthodes sans que le simulateur ait à les implémenter : il renvoie des exigences vides ou accepte l’opération sans effet. Le même code applicatif fonctionne ainsi sur les deux backends.
+
+Les crochets de test : DebugSetHead permet d’imposer directement une position de tête et DebugPushSample d’injecter un échantillon de suivi horodaté sans dépendre de l’horloge réelle. Ce sont des outils de simulation et de test ; un vrai casque fournit ses données depuis ses capteurs et ne doit pas permettre à l’application de falsifier ainsi son suivi matériel.
+
+L’image : GetVulkanRequirements, GetVulkanPhysicalDevice, BindVulkan, CreateHmdSwapchains et SubmitEyes concernent les exigences graphiques, le choix du périphérique Vulkan, sa liaison, les images échangeables du casque et leur soumission. Le simulateur n’a pas de casque physique ni de runtime OpenXR à relier : il dessine dans une fenêtre ordinaire et n’a donc pas besoin de ces opérations spécifiques.

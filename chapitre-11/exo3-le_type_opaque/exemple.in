@@ -1,0 +1,7 @@
+1 openxr.h
+5
+main.cpp 2 MaSalle.h NKXR.h
+NKXR.h 1 NkXrSession.h
+NkXrSession.h 1 NkXrOpenXRBackend.h
+NkXrOpenXRBackend.h 0
+NkXrOpenXRBackend.cpp 3 NkXrOpenXRBackend.h openxr.h windows.h

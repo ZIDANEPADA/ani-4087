@@ -1,0 +1,11 @@
+2
+C:\Rt\oculus.json
+6
+{
+    "file_format_version": "1.0.0",
+    "runtime": {
+        "library_path": ".\\bin\\RtVr64.dll"
+    }
+}
+-
+0
