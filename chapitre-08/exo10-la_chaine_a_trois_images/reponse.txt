@@ -1,0 +1,36 @@
+Mes trente lignes : La séquence ci-dessous est une séquence déterministe de 30 trames du modèle, avec une chaîne de trois images :
+1 0
+2 1
+3 2
+4 0
+5 1
+6 2
+7 0
+8 1
+9 2
+10 0
+11 1
+12 2
+13 0
+14 1
+15 2
+16 0
+17 1
+18 2
+19 0
+20 1
+21 2
+22 0
+23 1
+24 2
+25 0
+26 1
+27 2
+28 0
+29 1
+30 2
+Il s’agit d’une séquence simulée pour documenter le cycle, pas d’une capture de ma salle RIHEN réelle.
+
+Le minimum d’images : Le minimum dépend de L. Quand L vaut 0, une image suffit ; quand L vaut 1, deux images suffisent ; quand L vaut 2, il faut au moins trois images pour éviter de réutiliser une image encore lue. Les conflits affichés par le programme permettent de le vérifier.
+
+Sur le simulateur : Le simulateur termine la lecture après la soumission, donc L vaut 0. Trois images ne sont pas nécessaires pour éviter un conflit dans ce modèle, mais elles permettent de conserver le même cycle de plusieurs images que celui utilisé avec un runtime réel.

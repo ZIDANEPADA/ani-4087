@@ -1,0 +1,18 @@
+Images paires et impaires : Avec deux images, les lectures P (avant ReleaseImage) montrent la trame précédente, tandis que D (après ReleaseImage) montre la trame courante. L’alternance provoque donc des sauts de position et un tremblement.
+
+Avec une seule image :
+1 10 -
+2 20 10
+3 30 10
+4 40 10
+5 50 10
+6 60 10
+7 70 10
+8 80 10
+SAUT MIN 10
+SAUT MAX 10
+TREMBLE NON
+
+Avec une seule image, tous les modes désignent l’unique emplacement : le décalage disparaît.
+
+La bonne lecture : Il faut lire GetLastReleasedIndex après ReleaseImage. À ce moment, l’index désigne bien l’image qui vient d’être peinte.

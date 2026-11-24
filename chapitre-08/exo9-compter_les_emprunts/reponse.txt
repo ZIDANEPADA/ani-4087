@@ -1,0 +1,5 @@
+La relation : Chaque AcquireImage réussi doit être suivi d’un ReleaseImage. Un second emprunt pendant qu’une image est déjà empruntée est refusé ; après une fuite, les trames suivantes restent bloquées. Ainsi, REUSSIES - LIBERATIONS mesure le nombre d’images encore empruntées.
+
+Mes trois nombres : Dans le scénario fourni, REUSSIES = 5, REFUSEES = 1 et LIBERATIONS = 4. Ce sont les compteurs du scénario d’exercice, pas une mesure d’une minute de ma salle réelle ; cette mesure doit être relevée en instrumentant et en exécutant ma boucle de rendu pendant 60 secondes.
+
+Le chemin qui fuit : Le chemin « sortie » quitte la trame immédiatement après AcquireImage sans appeler ReleaseImage. Il faut garantir ReleaseImage sur tous les chemins de sortie, y compris en cas d’erreur ou de retour anticipé.
