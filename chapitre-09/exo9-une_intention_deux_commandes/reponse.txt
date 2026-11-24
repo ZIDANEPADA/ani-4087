@@ -1,0 +1,5 @@
+Ce qui change : Sur un vrai casque, seule la table de correspondance entre les usages (SELECT, GRAB, MENU, etc.) et les commandes physiques changerait. Le reste du programme continuerait à traiter les mêmes actions nommées.
+
+Aucun nom de bouton : En dehors de la table, le programme ne teste ni SOURIS_G, ni ESPACE, ni E, ni TAB. Il récupère la commande associée à chaque usage dans la table, puis vérifie si cette commande est tenue.
+
+L'action inactive : Une action est inactive lorsque son usage n'existe pas dans la table ou n'est lié à aucune source matérielle. Elle ne peut alors produire aucun appui. Il faut le signaler au diagnostic, car sinon l'absence de liaison pourrait être confondue avec un bouton simplement relâché.

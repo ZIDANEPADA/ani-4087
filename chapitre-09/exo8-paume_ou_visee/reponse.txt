@@ -1,0 +1,5 @@
+La distance : La paume droite et la visée droite sont séparées de 158 mm environ. Le décalage entre leurs positions locales est de 50 mm en hauteur et de 150 mm vers l'avant, soit une distance de racine de 25 000 mm², arrondie à 158 mm.
+
+L'angle : Dans ce simulateur, l'angle entre les deux directions avant vaut 0 degré, car la paume et la visée conservent toutes deux l'orientation de la tête. Sur un vrai casque, leurs orientations peuvent être calibrées différemment par le constructeur : l'angle ne serait donc pas nécessairement nul.
+
+Pour pointer : Il faut utiliser la visée droite, conçue pour fournir un rayon de pointage naturel. La paume droite sert à saisir et tenir les objets ; l'utiliser pour pointer donnerait un rayon mal orienté.

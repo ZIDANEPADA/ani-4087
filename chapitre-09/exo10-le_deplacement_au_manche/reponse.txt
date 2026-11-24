@@ -1,0 +1,5 @@
+Décalage ou tête : Le déplacement doit modifier le décalage du monde (ou de l'espace joueur), et non la pose de la tête. La position de la tête reste fournie par le casque ; le monde est déplacé dans la direction opposée ou selon la convention de décalage retenue par le moteur, sans falsifier le suivi matériel.
+
+Ce que la tête casserait : Écrire directement dans la pose de la tête entrerait en conflit avec le suivi du casque. La prédiction de pose deviendrait incohérente, car le moteur s'attend à recevoir la vraie pose mesurée et prédite par le dispositif. Cela pourrait provoquer des mouvements incorrects, des tremblements et une mauvaise stabilité visuelle.
+
+Les diagonales : Avec x = 1 et y = 1, la norme du déplacement vaut racine de 2 fois le pas normal : le joueur va donc environ 1,414 fois plus vite, soit 41,4 % plus vite en diagonale. Pour éviter cela, il faut normaliser le vecteur du manche avant de le multiplier par la vitesse, ou diviser chaque composante diagonale par racine de 2.
